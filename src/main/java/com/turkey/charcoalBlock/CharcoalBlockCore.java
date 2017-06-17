@@ -2,12 +2,15 @@ package com.turkey.charcoalBlock;
 
 import org.apache.logging.log4j.Logger;
 
+import com.google.gson.JsonElement;
 import com.theprogrammingturkey.gobblecore.IModCore;
 import com.theprogrammingturkey.gobblecore.blocks.BaseBlock;
 import com.theprogrammingturkey.gobblecore.blocks.BlockLoader;
 import com.theprogrammingturkey.gobblecore.blocks.BlockManager;
 import com.theprogrammingturkey.gobblecore.blocks.IBlockHandler;
 import com.theprogrammingturkey.gobblecore.managers.CraftingManager;
+import com.theprogrammingturkey.gobblecore.managers.WebHookManager;
+import com.theprogrammingturkey.gobblecore.managers.WebHookManager.ModWebHook;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.ItemModelMesher;
@@ -66,6 +69,14 @@ public class CharcoalBlockCore implements IModCore
 	public void load(FMLPreInitializationEvent event)
 	{
 		logger = event.getModLog();
+
+		WebHookManager.registerHook(new ModWebHook(this)
+		{
+			@Override
+			public void onResponse(JsonElement json)
+			{
+			}
+		});
 	}
 
 	@EventHandler
