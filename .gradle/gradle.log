@@ -1,0 +1,39 @@
+This mapping 'snapshot_20160518' was designed for MC 1.9.4! Use at your own peril.This mapping 'snapshot_20160518' was designed for MC 1.9.4! Use at your own peril.
+
+:deobfCompileDummyTask
+:deobfProvidedDummyTask
+:getVersionJson
+:extractUserdev UP-TO-DATE
+:extractDependencyATs SKIPPED
+:extractMcpData SKIPPED
+:extractMcpMappings SKIPPED
+:genSrgs SKIPPED
+:downloadClient SKIPPED
+:downloadServer SKIPPED
+:splitServerJar SKIPPED
+:mergeJars SKIPPED
+:deobfMcSRG SKIPPED
+:decompileMc SKIPPED
+:fixMcSources SKIPPED
+:applySourcePatches SKIPPED
+:remapMcSources SKIPPED
+:recompileMc SKIPPED
+:extractNatives SKIPPED
+:getAssetIndex UP-TO-DATE
+:getAssets
+Current status: 890/1112   80%
+:makeStart
+:setupDecompWorkspace
+:eclipseClasspath
+Download http://maven.theprogrammingturkey.com/com/theprogrammingturkey/gobblecore/GobbleCore/1.10.2-0.1.4.13/GobbleCore-1.10.2-0.1.4.13.pom
+Download http://maven.theprogrammingturkey.com/com/theprogrammingturkey/gobblecore/GobbleCore/1.10.2-0.1.4.13/GobbleCore-1.10.2-0.1.4.13.jar
+Download http://maven.theprogrammingturkey.com/com/theprogrammingturkey/gobblecore/GobbleCore/1.10.2-0.1.4.13/GobbleCore-1.10.2-0.1.4.13-sources.jar
+:eclipseJdt
+:eclipseProject
+:makeEclipseCleanRunClient
+:makeEclipseCleanRunServer UP-TO-DATE
+:eclipse
+
+BUILD SUCCESSFUL
+
+Total time: 20.67 secs

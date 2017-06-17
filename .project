@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>CharcolBlockMod</name>
-	<comment/>
+	<name>Block of Charcoal</name>
+	<comment></comment>
 	<projects/>
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
