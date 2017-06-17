@@ -1,4 +1,4 @@
-This mapping 'snapshot_20160518' was designed for MC 1.9.4! Use at your own peril.This mapping 'snapshot_20160518' was designed for MC 1.9.4! Use at your own peril.
+This mapping 'snapshot_20161111' was designed for MC 1.10.2! Use at your own peril.This mapping 'snapshot_20161111' was designed for MC 1.10.2! Use at your own peril.
 
 :deobfCompileDummyTask
 :deobfProvidedDummyTask
@@ -21,19 +21,19 @@ This mapping 'snapshot_20160518' was designed for MC 1.9.4! Use at your own peri
 :extractNatives SKIPPED
 :getAssetIndex UP-TO-DATE
 :getAssets
-Current status: 890/1112   80%
+Current status: 855/1196   71%
 :makeStart
 :setupDecompWorkspace
 :eclipseClasspath
-Download http://maven.theprogrammingturkey.com/com/theprogrammingturkey/gobblecore/GobbleCore/1.10.2-0.1.4.13/GobbleCore-1.10.2-0.1.4.13.pom
-Download http://maven.theprogrammingturkey.com/com/theprogrammingturkey/gobblecore/GobbleCore/1.10.2-0.1.4.13/GobbleCore-1.10.2-0.1.4.13.jar
-Download http://maven.theprogrammingturkey.com/com/theprogrammingturkey/gobblecore/GobbleCore/1.10.2-0.1.4.13/GobbleCore-1.10.2-0.1.4.13-sources.jar
+Download http://maven.theprogrammingturkey.com/com/theprogrammingturkey/gobblecore/GobbleCore/1.11.2-0.1.4.14/GobbleCore-1.11.2-0.1.4.14.pom
+Download http://maven.theprogrammingturkey.com/com/theprogrammingturkey/gobblecore/GobbleCore/1.11.2-0.1.4.14/GobbleCore-1.11.2-0.1.4.14.jar
+Download http://maven.theprogrammingturkey.com/com/theprogrammingturkey/gobblecore/GobbleCore/1.11.2-0.1.4.14/GobbleCore-1.11.2-0.1.4.14-sources.jar
 :eclipseJdt
 :eclipseProject
-:makeEclipseCleanRunClient
+:makeEclipseCleanRunClient UP-TO-DATE
 :makeEclipseCleanRunServer UP-TO-DATE
 :eclipse
 
 BUILD SUCCESSFUL
 
-Total time: 20.67 secs
+Total time: 25.053 secs

@@ -22,7 +22,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-@Mod(modid = CharcoalBlockCore.MODID, version = CharcoalBlockCore.VERSION, name = CharcoalBlockCore.Name, dependencies = "after:gobblecore[0.1.4.13,)")
+@Mod(modid = CharcoalBlockCore.MODID, version = CharcoalBlockCore.VERSION, name = CharcoalBlockCore.Name, dependencies = "after:gobblecore[0.1.4.14,)")
 public class CharcoalBlockCore implements IModCore
 {
 	public static final String MODID = "charcoalblock";
@@ -35,9 +35,9 @@ public class CharcoalBlockCore implements IModCore
 
 	public static CreativeTabs baseModTab = new CreativeTabs(MODID)
 	{
-		public Item getTabIconItem()
+		public ItemStack getTabIconItem()
 		{
-			return Item.getItemFromBlock(theBlock);
+			return new ItemStack(theBlock);
 		}
 	};
 
