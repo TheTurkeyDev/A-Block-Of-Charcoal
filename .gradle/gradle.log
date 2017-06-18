@@ -21,19 +21,16 @@ This mapping 'snapshot_20160518' was designed for MC 1.9.4! Use at your own peri
 :extractNatives SKIPPED
 :getAssetIndex UP-TO-DATE
 :getAssets
-Current status: 890/1112   80%
+Current status: 920/1112   82%
 :makeStart
 :setupDecompWorkspace
 :eclipseClasspath
-Download http://maven.theprogrammingturkey.com/com/theprogrammingturkey/gobblecore/GobbleCore/1.10.2-0.1.4.13/GobbleCore-1.10.2-0.1.4.13.pom
-Download http://maven.theprogrammingturkey.com/com/theprogrammingturkey/gobblecore/GobbleCore/1.10.2-0.1.4.13/GobbleCore-1.10.2-0.1.4.13.jar
-Download http://maven.theprogrammingturkey.com/com/theprogrammingturkey/gobblecore/GobbleCore/1.10.2-0.1.4.13/GobbleCore-1.10.2-0.1.4.13-sources.jar
 :eclipseJdt
 :eclipseProject
-:makeEclipseCleanRunClient
+:makeEclipseCleanRunClient UP-TO-DATE
 :makeEclipseCleanRunServer UP-TO-DATE
 :eclipse
 
 BUILD SUCCESSFUL
 
-Total time: 20.67 secs
+Total time: 18.473 secs
