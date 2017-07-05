@@ -21,13 +21,10 @@ This mapping 'snapshot_20161111' was designed for MC 1.10.2! Use at your own per
 :extractNatives SKIPPED
 :getAssetIndex UP-TO-DATE
 :getAssets
-Current status: 855/1196   71%
+Current status: 981/1196   82%
 :makeStart
 :setupDecompWorkspace
 :eclipseClasspath
-Download http://maven.theprogrammingturkey.com/com/theprogrammingturkey/gobblecore/GobbleCore/1.11.2-0.1.4.14/GobbleCore-1.11.2-0.1.4.14.pom
-Download http://maven.theprogrammingturkey.com/com/theprogrammingturkey/gobblecore/GobbleCore/1.11.2-0.1.4.14/GobbleCore-1.11.2-0.1.4.14.jar
-Download http://maven.theprogrammingturkey.com/com/theprogrammingturkey/gobblecore/GobbleCore/1.11.2-0.1.4.14/GobbleCore-1.11.2-0.1.4.14-sources.jar
 :eclipseJdt
 :eclipseProject
 :makeEclipseCleanRunClient UP-TO-DATE
@@ -36,4 +33,4 @@ Download http://maven.theprogrammingturkey.com/com/theprogrammingturkey/gobbleco
 
 BUILD SUCCESSFUL
 
-Total time: 25.053 secs
+Total time: 50.813 secs
