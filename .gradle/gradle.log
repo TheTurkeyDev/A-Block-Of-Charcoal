@@ -21,7 +21,7 @@ This mapping 'snapshot_20160518' was designed for MC 1.9.4! Use at your own peri
 :extractNatives SKIPPED
 :getAssetIndex UP-TO-DATE
 :getAssets
-Current status: 920/1112   82%
+Current status: 954/1112   85%
 :makeStart
 :setupDecompWorkspace
 :eclipseClasspath
@@ -33,4 +33,4 @@ Current status: 920/1112   82%
 
 BUILD SUCCESSFUL
 
-Total time: 18.473 secs
+Total time: 24.205 secs
