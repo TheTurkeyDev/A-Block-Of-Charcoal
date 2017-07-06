@@ -8,6 +8,9 @@ import com.theprogrammingturkey.gobblecore.blocks.BaseBlock;
 import com.theprogrammingturkey.gobblecore.blocks.BlockLoader;
 import com.theprogrammingturkey.gobblecore.blocks.BlockManager;
 import com.theprogrammingturkey.gobblecore.blocks.IBlockHandler;
+import com.theprogrammingturkey.gobblecore.items.IItemHandler;
+import com.theprogrammingturkey.gobblecore.items.ItemLoader;
+import com.theprogrammingturkey.gobblecore.items.ItemManager;
 import com.theprogrammingturkey.gobblecore.managers.CraftingManager;
 import com.theprogrammingturkey.gobblecore.managers.WebHookManager;
 import com.theprogrammingturkey.gobblecore.managers.WebHookManager.ModWebHook;
@@ -25,7 +28,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-@Mod(modid = CharcoalBlockCore.MODID, version = CharcoalBlockCore.VERSION, name = CharcoalBlockCore.Name, dependencies = "required-after:gobblecore[0.1.4.14,)")
+@Mod(modid = CharcoalBlockCore.MODID, version = CharcoalBlockCore.VERSION, name = CharcoalBlockCore.Name, dependencies = "required-after:gobblecore")
 public class CharcoalBlockCore implements IModCore
 {
 	public static final String MODID = "charcoalblock";
@@ -62,6 +65,24 @@ public class CharcoalBlockCore implements IModCore
 
 				loader.registerBlockModel(mesher, theBlock, 0, theBlock.getBlockName());
 			}
+		}, this);
+
+		ItemManager.registerItemHandler(new IItemHandler()
+		{
+
+			@Override
+			public void registerItems(ItemLoader loader)
+			{
+				loader.setCreativeTab(baseModTab);
+				loader.registerBlockItem(theBlock);
+			}
+
+			@Override
+			public void registerModels(ItemLoader loader)
+			{
+
+			}
+
 		}, this);
 	}
 

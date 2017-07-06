@@ -1,5 +1,14 @@
-This mapping 'snapshot_20161111' was designed for MC 1.10.2! Use at your own peril.This mapping 'snapshot_20161111' was designed for MC 1.10.2! Use at your own peril.
+This mapping 'snapshot_20161220' was designed for MC 1.11! Use at your own peril.This mapping 'snapshot_20161220' was designed for MC 1.11! Use at your own peril.
 
+#################################################
+         ForgeGradle 2.3-SNAPSHOT-effc52c        
+  https://github.com/MinecraftForge/ForgeGradle  
+#################################################
+               Powered by MCP unknown               
+             http://modcoderpack.com             
+         by: Searge, ProfMobius, Fesh0r,         
+         R4wk, ZeuX, IngisKahn, bspkrs           
+#################################################
 :deobfCompileDummyTask
 :deobfProvidedDummyTask
 :getVersionJson
@@ -14,17 +23,20 @@ This mapping 'snapshot_20161111' was designed for MC 1.10.2! Use at your own per
 :mergeJars SKIPPED
 :deobfMcSRG SKIPPED
 :decompileMc SKIPPED
-:fixMcSources SKIPPED
+:fixMcSources
 :applySourcePatches SKIPPED
 :remapMcSources SKIPPED
 :recompileMc SKIPPED
 :extractNatives SKIPPED
 :getAssetIndex UP-TO-DATE
 :getAssets
-Current status: 981/1196   82%
+Current status: 930/1281   72%
 :makeStart
 :setupDecompWorkspace
 :eclipseClasspath
+Download http://maven.theprogrammingturkey.com/com/theprogrammingturkey/gobblecore/GobbleCore/1.12-0.1.5.23/GobbleCore-1.12-0.1.5.23.pom
+Download http://maven.theprogrammingturkey.com/com/theprogrammingturkey/gobblecore/GobbleCore/1.12-0.1.5.23/GobbleCore-1.12-0.1.5.23.jar
+Download http://maven.theprogrammingturkey.com/com/theprogrammingturkey/gobblecore/GobbleCore/1.12-0.1.5.23/GobbleCore-1.12-0.1.5.23-sources.jar
 :eclipseJdt
 :eclipseProject
 :makeEclipseCleanRunClient UP-TO-DATE
@@ -33,4 +45,4 @@ Current status: 981/1196   82%
 
 BUILD SUCCESSFUL
 
-Total time: 50.813 secs
+Total time: 59.505 secs
