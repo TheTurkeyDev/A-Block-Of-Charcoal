@@ -1,5 +1,14 @@
 This mapping 'snapshot_20160518' was designed for MC 1.9.4! Use at your own peril.This mapping 'snapshot_20160518' was designed for MC 1.9.4! Use at your own peril.
 
+#################################################
+         ForgeGradle 2.2-SNAPSHOT-f0ba31b        
+  https://github.com/MinecraftForge/ForgeGradle  
+#################################################
+               Powered by MCP unknown               
+             http://modcoderpack.com             
+         by: Searge, ProfMobius, Fesh0r,         
+         R4wk, ZeuX, IngisKahn, bspkrs           
+#################################################
 :deobfCompileDummyTask
 :deobfProvidedDummyTask
 :getVersionJson
@@ -14,23 +23,23 @@ This mapping 'snapshot_20160518' was designed for MC 1.9.4! Use at your own peri
 :mergeJars SKIPPED
 :deobfMcSRG SKIPPED
 :decompileMc SKIPPED
-:fixMcSources SKIPPED
+:fixMcSources
 :applySourcePatches SKIPPED
 :remapMcSources SKIPPED
 :recompileMc SKIPPED
 :extractNatives SKIPPED
 :getAssetIndex UP-TO-DATE
 :getAssets
-Current status: 954/1112   85%
+Current status: 813/1112   73%
 :makeStart
 :setupDecompWorkspace
 :eclipseClasspath
 :eclipseJdt
 :eclipseProject
-:makeEclipseCleanRunClient UP-TO-DATE
-:makeEclipseCleanRunServer UP-TO-DATE
+:makeEclipseCleanRunClient
+:makeEclipseCleanRunServer
 :eclipse
 
 BUILD SUCCESSFUL
 
-Total time: 24.205 secs
+Total time: 35.833 secs
