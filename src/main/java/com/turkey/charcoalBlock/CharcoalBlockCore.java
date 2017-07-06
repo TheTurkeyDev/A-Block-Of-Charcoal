@@ -25,7 +25,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-@Mod(modid = CharcoalBlockCore.MODID, version = CharcoalBlockCore.VERSION, name = CharcoalBlockCore.Name, dependencies = "required-after:gobblecore[0.1.4.14,)")
+@Mod(modid = CharcoalBlockCore.MODID, version = CharcoalBlockCore.VERSION, name = CharcoalBlockCore.Name, dependencies = "required-after:gobblecore")
 public class CharcoalBlockCore implements IModCore
 {
 	public static final String MODID = "charcoalblock";
