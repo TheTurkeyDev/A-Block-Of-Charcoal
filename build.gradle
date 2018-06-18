@@ -27,19 +27,6 @@ minecraft {
 	mappings = "snapshot_20161220"
 }
 
-repositories {
-	mavenCentral()
-	
-    maven { // The repo from which to get GobbleCore
-        name "GobbleCore Repo"
-        url "http://maven.theprogrammingturkey.com/"
-    }
-}
-
-dependencies {
-	compile "com.theprogrammingturkey.gobblecore:GobbleCore:1.12-0.1.5.23"
-}
-
 processResources
 {
     inputs.property "version", project.version
