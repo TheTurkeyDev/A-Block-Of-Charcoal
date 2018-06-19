@@ -3,7 +3,6 @@ package com.turkey.charcoalBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.ItemModelMesher;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Items;
@@ -12,6 +11,7 @@ import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.IFuelHandler;
 import net.minecraftforge.fml.common.Mod;
@@ -32,19 +32,18 @@ public class CharcoalBlockCore
 	public static Block theBlock;
 
 	@EventHandler
-	public void load(FMLPreInitializationEvent event)
+	public void preinit(FMLPreInitializationEvent event)
 	{
-		if(event.getSide() == Side.CLIENT)
-		{
-			ItemModelMesher mesher = Minecraft.getMinecraft().getRenderItem().getItemModelMesher();
-
-			mesher.register(Item.getItemFromBlock(theBlock), 0, new ModelResourceLocation(MODID + ":charcoal_block", "inventory"));
-		}
+		MinecraftForge.EVENT_BUS.register(this);
 	}
 
 	@EventHandler
-	public void load(FMLInitializationEvent event)
+	public void init(FMLInitializationEvent event)
 	{
+		if(event.getSide() == Side.CLIENT)
+		{
+			Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(theBlock), 0, new ModelResourceLocation(MODID + ":charcoal_block", "inventory"));
+		}
 		GameRegistry.registerFuelHandler(new IFuelHandler()
 		{
 			@Override
@@ -67,6 +66,7 @@ public class CharcoalBlockCore
 		theBlock = new Block(Material.GROUND);
 		theBlock.setCreativeTab(CreativeTabs.MATERIALS);
 		theBlock.setHardness(5);
+		theBlock.setRegistryName(MODID, "charcoal_block");
 		theBlock.setUnlocalizedName("charcoal_block");
 		e.getRegistry().register(theBlock);
 	}
