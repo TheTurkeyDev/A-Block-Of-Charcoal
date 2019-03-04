@@ -1,10 +1,25 @@
-build/
-run-1.10/
-*.hprof
+# eclipse
+bin
 *.launch
-bin/
-run-1.11/
-run-1.12/
-.gradle/
-.project
+.settings
+.metadata
 .classpath
+.project
+
+# idea
+out
+*.ipr
+*.iws
+*.iml
+.idea
+
+# gradle
+build
+.gradle
+
+# other
+eclipse
+run
+
+# Files from Forge MDK
+forge*changelog.txt

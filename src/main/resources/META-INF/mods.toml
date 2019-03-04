@@ -1,0 +1,18 @@
+modLoader="javafml"
+loaderVersion="[25,)"
+issueTrackerURL="https://github.com/Turkey2349/A-Block-Of-Charcoal/issues"
+[[mods]]
+    modId="charcoalblock"
+    version="1.2"
+    displayName="A Block of Charcoal"
+    displayURL="https://minecraft.curseforge.com/projects/a-block-of-charcoal"
+    authors="Turkey2349"
+    description='''
+    What do you think it does?
+    '''
+    [[dependencies.examplemod]]
+        modId="forge"
+        mandatory=true
+        versionRange="[25,)"
+        ordering="NONE"
+        side="BOTH"
