@@ -5,14 +5,14 @@ import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.event.furnace.FurnaceFuelBurnTimeEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
 @Mod(CharcoalBlockCore.MODID)
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.FORGE)
+@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class CharcoalBlockCore
 {
 	public static final String MODID = "charcoalblock";
@@ -26,14 +26,7 @@ public class CharcoalBlockCore
 	}
 
 	@SubscribeEvent
-	public void fuelEvent(FurnaceFuelBurnTimeEvent event)
-	{
-		if(event.getItemStack().getItem().equals(theItemBlock))
-			event.setBurnTime(16000);
-	}
-
-	@SubscribeEvent
-	public void onBlockRegistry(RegistryEvent.Register<Block> e)
+	public static void onBlockRegistry(RegistryEvent.Register<Block> e)
 	{
 		theBlock = new Block(Block.Properties.create(Material.GROUND).hardnessAndResistance(5));
 		theBlock.setRegistryName(MODID, "charcoal_block");
@@ -41,9 +34,16 @@ public class CharcoalBlockCore
 	}
 
 	@SubscribeEvent
-	public void onItemRegistry(RegistryEvent.Register<Item> e)
+	public static void onItemRegistry(RegistryEvent.Register<Item> e)
 	{
-		theItemBlock = new ItemBlock(theBlock, (new Item.Properties()).group(ItemGroup.MATERIALS));
+		theItemBlock = new ItemBlock(theBlock, (new Item.Properties()).group(ItemGroup.BUILDING_BLOCKS))
+		{
+			@Override
+			public int getBurnTime(ItemStack itemStack)
+			{
+				return 14400;
+			}
+		};
 		theItemBlock.setRegistryName(theBlock.getRegistryName());
 		e.getRegistry().register(theItemBlock);
 	}
