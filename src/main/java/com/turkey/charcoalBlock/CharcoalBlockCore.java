@@ -2,6 +2,7 @@ package com.turkey.charcoalBlock;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.material.MaterialColor;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -17,8 +18,7 @@ public class CharcoalBlockCore
 {
 	public static final String MODID = "charcoalblock";
 
-	public static Block theBlock;
-	public static Item theItemBlock;
+	private static Block theBlock;
 
 	public CharcoalBlockCore()
 	{
@@ -28,7 +28,7 @@ public class CharcoalBlockCore
 	@SubscribeEvent
 	public static void onBlockRegistry(RegistryEvent.Register<Block> e)
 	{
-		theBlock = new Block(Block.Properties.create(Material.EARTH).hardnessAndResistance(5));
+		theBlock = new Block(Block.Properties.create(Material.ROCK, MaterialColor.BLACK).hardnessAndResistance(5.0F, 6.0F));
 		theBlock.setRegistryName(MODID, "charcoal_block");
 		e.getRegistry().register(theBlock);
 	}
@@ -36,7 +36,7 @@ public class CharcoalBlockCore
 	@SubscribeEvent
 	public static void onItemRegistry(RegistryEvent.Register<Item> e)
 	{
-		theItemBlock = new BlockItem(theBlock, (new Item.Properties()).group(ItemGroup.BUILDING_BLOCKS))
+		Item theItemBlock = new BlockItem(theBlock, (new Item.Properties()).group(ItemGroup.BUILDING_BLOCKS))
 		{
 			@Override
 			public int getBurnTime(ItemStack itemStack)
