@@ -55,11 +55,29 @@ minecraft {
                 }
             }
         }
+
+        data {
+            workingDirectory project.file('run')
+
+            // Recommended logging data for a userdev environment
+            property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
+
+            // Recommended logging level for the console
+            property 'forge.logging.console.level', 'debug'
+
+            args '--mod', 'examplemod', '--all', '--output', file('src/generated/resources/')
+
+            mods {
+                examplemod {
+                    source sourceSets.main
+                }
+            }
+        }
     }
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.14.4-28.1.61'
+    minecraft 'net.minecraftforge:forge:1.15.1-30.0.24'
 }
 
 // Example for how to get properties into the manifest for reading by the runtime..
