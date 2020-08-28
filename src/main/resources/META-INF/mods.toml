@@ -7,12 +7,7 @@ issueTrackerURL="https://github.com/Turkey2349/A-Block-Of-Charcoal/issues"
     displayName="A Block of Charcoal"
     displayURL="https://minecraft.curseforge.com/projects/a-block-of-charcoal"
     authors="Turkey2349"
+    license="MIT"
     description='''
     What do you think it does?
     '''
-    [[dependencies.examplemod]]
-        modId="forge"
-        mandatory=true
-        versionRange="[25,)"
-        ordering="NONE"
-        side="BOTH"
