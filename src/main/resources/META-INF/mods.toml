@@ -1,13 +1,13 @@
 modLoader="javafml"
 loaderVersion="[25,)"
 issueTrackerURL="https://github.com/Turkey2349/A-Block-Of-Charcoal/issues"
+license="MIT"
 [[mods]]
     modId="charcoalblock"
     version="1.2"
     displayName="A Block of Charcoal"
     displayURL="https://minecraft.curseforge.com/projects/a-block-of-charcoal"
     authors="Turkey2349"
-    license="MIT"
     description='''
     What do you think it does?
     '''
